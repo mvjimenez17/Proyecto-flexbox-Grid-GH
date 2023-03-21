@@ -1,0 +1,118 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+:root{
+    --url-img: url(img/foto1.png);
+}
+
+
+body{
+    font-family:  'Arial Narrow';
+}
+
+.nav{
+    background: darkmagenta;
+    height: 80px;
+    align-items: center;
+    padding: 0 80px;
+    color: #fff;
+    overflow: hidden;
+    display: flex;
+    justify-content: space-between;
+}
+
+.nav__img{
+    background-image: var(--url-img); 
+    width: 100px;
+    height: 100px;
+    background-size: cover;
+    background-position: center;
+}
+
+.nav__link{
+    text-decoration: none;
+    color: #fff;
+    margin-left: 2em;
+}
+
+
+.nav__cta{
+    font-size: 1em;
+    margin-left: 16px;
+    text-decoration: none;
+    color: #fff;
+}
+
+/* card */
+
+.cards{
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    padding: 60px 0;
+    gap: 2em;
+
+}
+
+.card{
+    padding-bottom: 2.5em;
+    width: 100%;
+    border-radius: 1em;
+    -webkit-border-radius: 1em;
+    -moz-border-radius: 1em;
+    -ms-border-radius: 1em;
+    -o-border-radius: 1em;
+    box-shadow: 0 0 6px rgba(0, 0, 0, .5);
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    gap: 1em;
+}
+
+.card__img--1{
+    background-image: url(img/flexbox.jpg);
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+    height: 200px;
+}
+
+.card__img--2{
+    background-image: url(img/ImageGridEffects_Main.jpg);
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+    height: 200px;
+}
+
+.card__img--3{
+    background-image: url(img/ambos.jpg);
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+    height: 200px;
+}
+
+
+.card__cta{
+    margin-left: 1em;
+    background: darkmagenta;
+    color: #fff;
+    text-decoration: none;
+    padding: 1em 3em;
+    width: 200px;
+    text-align: center;
+    margin: 0 auto;
+    margin-top: auto;
+    border-radius: 25px;
+    -webkit-border-radius: 25px;
+    -moz-border-radius: 25px;
+    -ms-border-radius: 25px;
+    -o-border-radius: 25px;
+}
+
